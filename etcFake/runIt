@@ -1,0 +1,35 @@
+#!/bin/bash
+# run these command after container creation
+
+service apache2 stop
+
+echo 'export APACHE_MY_CERT_NAME="mySite.com"' >> /etc/apache2/envvars
+
+a2enmod ssl
+service apache2 restart
+a2enmod rewrite
+service apache2 restart
+a2ensite default-ssl
+service apache2 reload
+
+
+service apache2 stop
+
+ln -sf  /root/ssl/certs/$APACHE_MY_CERT_NAME.crt /etc/ssl/certs/$APACHE_MY_CERT_NAME.crt 
+ln -sf  /root/ssl/certs/$APACHE_MY_CERT_NAME.apachebundle.crt /etc/ssl/certs/$APACHE_MY_CERT_NAME.apachebundle.crt 
+ln -sf  /root/ssl/private/$APACHE_MY_CERT_NAME.key /etc/ssl/private/$APACHE_MY_CERT_NAME.key 
+ln -sf  /root/apache2/sites-enabled/default-ssl.conf /etc/apache2/sites-enabled/default-ssl.conf
+ln -sf  /root/apache2/sites-enabled/000-default.conf /etc/apache2/sites-enabled/000-default.conf
+
+apache2ctl configtest
+
+
+ln -sf /dev/stderr  /var/log/apache2/error.log
+ln -sf /dev/stdout  /var/log/apache2/access.log
+
+
+apache2ctl configtest
+
+
+apache2ctl -D FOREGROUND
+
