@@ -3,7 +3,7 @@
 
 service apache2 stop
 
-echo 'export APACHE_MY_CERT_NAME="remas.website"' >> /etc/apache2/envvars
+echo 'export APACHE_MY_CERT_NAME="mySite.com"' >> /etc/apache2/envvars
 
 a2enmod ssl
 service apache2 restart

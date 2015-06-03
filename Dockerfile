@@ -6,7 +6,7 @@ ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2/
 ENV APACHE_RUN_DIR /var/run/apache2/
 ENV APACHE_LOCK_DIR /var/lock/apache2/
-ENV APACHE_MY_CERT_NAME remas.website
+ENV APACHE_MY_CERT_NAME mySite.com
 ENV APACHE_PID_FILE /var/run/apache2/apache2.pid
 VOLUME ["/var/www/"]
 ADD runIt /root/runIt
