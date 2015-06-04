@@ -4,8 +4,8 @@ Some docker scripts and files to create awesome containers!
 
 Prerequisites
 
-+Install docker (https://docs.docker.com/installation/)
-+Get your own SSL certificates (a great guide SSL/TLS: How do i get HTTPS for my site with a valid certificate? - https://www.sysorchestra.com/2015/02/15/ssltls-how-to-https-for-my-site-with-a-valid-certificate/)
++ Install docker (https://docs.docker.com/installation/)
++ Get your own SSL certificates (a great guide SSL/TLS: How do i get HTTPS for my site with a valid certificate? - https://www.sysorchestra.com/2015/02/15/ssltls-how-to-https-for-my-site-with-a-valid-certificate/)
 
 
 *Apache*
