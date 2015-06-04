@@ -31,7 +31,10 @@ You need to replace the files into the *apache2/ssl* only, with your own ssl cer
 Now:
 
 + docker build .
-+ docker tag <<container_id>> apache2:one
+
+(check the number like Successfully built 6160c269fa05)
+
++ docker tag 6160c269fa05 apache2:one
 + docker run -t -i --name apache2 -v /path/to/your/website:/var/www/ -v /path/to/the/dockerizing/etcFake:/root/ -p 80:80 -p 443:443 apache2:one
 
 Boom ! You are done with your site enjoy!
@@ -42,5 +45,9 @@ Boom ! You are done with your site enjoy!
 
 check an example created with this container https://remas.website
 
+#great docker resources
 
+kencochrane.net/blog/2013/08/the-docker-guidebook/#search
+kimh.github.io/blog/en/docker/gotchas-in-writing-dockerfile-en/
+docker home page (www.docker.com)
  
