@@ -24,9 +24,22 @@ so for example must be
 
 ENV APACHE_MY_CERT_NAME *google.com*
 
+Also rename the mySite.com legend from the runIt files . Also would be good you set permission 
+
++ chmod +x runIt
++ chmod +x etcFake/runIt
+
 *Then prepare the etcFake folder*
 
 You need to replace the files into the *apache2/ssl* only, with your own ssl certificates files so just replace mySite.com.crt, mySite.com.spachebundle.crt and mySite.com.key. (I'm using right now a great SSL certificate provided by https://github.com/coolaj86/nodejs-ssl-example/tree/master/certs thanks! @coolaj86) 
+
+Also consider changing permission on the ssl files
+
++ chmod 644 mySite.com.crt
++ chmod 644 mySite.com.apachebundle.crt
++ chmod 600 mySite.com.key
+
+*Dockerizing*
 
 Now from/since/inside the dockerizing folder do:
 
