@@ -2,19 +2,19 @@
 Some docker scripts and files to create awesome containers!
 
 
-Prerequisites
+###Prerequisites
 
 + Install docker (https://docs.docker.com/installation/)
 + Get your own SSL certificates (a great guide SSL/TLS: How do i get HTTPS for my site with a valid certificate? - https://www.sysorchestra.com/2015/02/15/ssltls-how-to-https-for-my-site-with-a-valid-certificate/)
 
 
-*Apache*
+###*Apache*
 
 + Clone it! (git clone https://github.com/web20opensource/dockerizing.git)
 + cd dockerizing
 
 
-*Edit the Dockerfile*
+###*Edit the Dockerfile*
 
 rename this mySite.com to your site domain (it's supposed to your SSL files are related to this domain name)
 
@@ -29,7 +29,7 @@ Also rename the mySite.com legend from the runIt files . Also would be good you 
 + chmod +x runIt
 + chmod +x etcFake/runIt
 
-*Then prepare the etcFake folder*
+###*Then prepare the etcFake folder*
 
 You need to replace the files into the *apache2/ssl* only, with your own ssl certificates files so just replace mySite.com.crt, mySite.com.spachebundle.crt and mySite.com.key. (I'm using right now a great SSL certificate provided by https://github.com/coolaj86/nodejs-ssl-example/tree/master/certs thanks! @coolaj86) 
 
@@ -39,7 +39,7 @@ Also consider changing permission on the ssl files
 + chmod 644 mySite.com.apachebundle.crt
 + chmod 600 mySite.com.key
 
-*Dockerizing*
+###*Dockerizing*
 
 Now from/since/inside the dockerizing folder do:
 
@@ -52,13 +52,9 @@ Now from/since/inside the dockerizing folder do:
 
 Boom ! You are done with your site enjoy!
 
-
-*Licensed by GPL v3*
-*Project created by Mario Ruiz *
-
 check an example created with this container https://remas.website
 
-#great docker resources
+###great docker resources
 
 www.kencochrane.net/blog/2013/08/the-docker-guidebook/#search
 
@@ -66,3 +62,6 @@ www.kimh.github.io/blog/en/docker/gotchas-in-writing-dockerfile-en/
 
 docker home page (www.docker.com)
  
+
+###*Licensed by GPL v3*
+###*Project created by Mario Ruiz *
