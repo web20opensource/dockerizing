@@ -47,7 +47,7 @@ check an example created with this container https://remas.website
 
 #great docker resources
 
-kencochrane.net/blog/2013/08/the-docker-guidebook/#search
-kimh.github.io/blog/en/docker/gotchas-in-writing-dockerfile-en/
++kencochrane.net/blog/2013/08/the-docker-guidebook/#search
++kimh.github.io/blog/en/docker/gotchas-in-writing-dockerfile-en/
 docker home page (www.docker.com)
  
