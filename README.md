@@ -26,7 +26,7 @@ ENV APACHE_MY_CERT_NAME *google.com*
 
 *Then prepare the etcFake folder*
 
-You need to replace the files into the *apache2/ssl* only, with your own ssl certificates files so just replace mySite.com.crt, mySite.com.spachebundle.crt and mySite.com.key. (I'm using right a great SSL certificate provided by https://github.com/coolaj86/nodejs-ssl-example/tree/master/certs thanks! @coolaj86) 
+You need to replace the files into the *apache2/ssl* only, with your own ssl certificates files so just replace mySite.com.crt, mySite.com.spachebundle.crt and mySite.com.key. (I'm using right now a great SSL certificate provided by https://github.com/coolaj86/nodejs-ssl-example/tree/master/certs thanks! @coolaj86) 
 
 Now:
 
