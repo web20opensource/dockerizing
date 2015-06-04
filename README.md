@@ -1,5 +1,6 @@
 # dockerizing
-Some docker scripts and files to create awesome containers!
+
+En-docker your apache server in linux with configurable ssl support
 
 
 ###Prerequisites
