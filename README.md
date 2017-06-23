@@ -53,8 +53,6 @@ Now from/since/inside the dockerizing folder do:
 
 Boom ! You are done with your site enjoy!
 
-check an example created with this container https://remas.website
-
 ###great docker resources
 
 www.kencochrane.net/blog/2013/08/the-docker-guidebook/#search
